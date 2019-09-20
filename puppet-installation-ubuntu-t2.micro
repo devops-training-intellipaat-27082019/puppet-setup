@@ -4,6 +4,6 @@ sudo apt-get install wget && \
 wget https://apt.puppetlabs.com/puppet-release-bionic.deb && \
 sudo dpkg -i puppet-release-bionic.deb && \
 sudo apt-get install puppet-master && \
-apt policy puppet master
+apt policy puppetmaster
 
 #puppet-slave installation on an ubuntu-16.04 machine running Amazon EC2 t2.micro instance
