@@ -23,14 +23,14 @@ JAVA_ARGS="-Xms512m Xmx512m"     //Add this Line after START=yes
 sudo systemctl restart puppetmaster && \
 sudo ufw allow 8140/tcp
 #Step-3: add puppet Master IP address to hosts file
-sudo nano /etc/hosts
+sudo nano /etc/hosts // IP_Address puppet
 #Step-4: Create direcory path for 
 sudo mkdir -p /etc/puppet/code/environments/production/manifests
 
 #Configuring Puppet Slave
 
 #Step-1: Add the entry for Puppet Master in /etc/hosts
-sudo nano /etc/hosts //Add puppet master IP address
+sudo nano /etc/hosts //Add puppet master IP address | Ex: IP_Address puppet
 #Step-2: start the Puppet agent and enable the service
 sudo systemctl start puppet && \
 sudo systemctl enable puppet
