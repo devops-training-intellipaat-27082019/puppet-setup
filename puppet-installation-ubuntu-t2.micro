@@ -1,0 +1,9 @@
+#puppet-master installation on an ubuntu-16.04 machine running Amazon EC2 t2.micro instance.
+sudo apt-get update && \
+sudo apt-get install wget && \
+wget https://apt.puppetlabs.com/puppet-release-bionic.deb && \
+sudo dpkg -i puppet-release-bionic.deb && \
+sudo apt-get install puppet-master && \
+apt policy puppet master
+
+#puppet-slave installation on an ubuntu-16.04 machine running Amazon EC2 t2.micro instance
