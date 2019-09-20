@@ -32,6 +32,9 @@ sudo mkdir -p /etc/puppet/code/environments/production/manifests
 #Step-1: Add the entry for Puppet Master in /etc/hosts
 sudo nano /etc/hosts //Add puppet master IP address
 #Step-2: start the Puppet agent and enable the service
-sudo systemctl start puppet
+sudo systemctl start puppet && \
 sudo systemctl enable puppet
 
+#Configuring Certificates on puppet-master
+sudo puppet cert list && \
+sudo puppet cert sign --all
