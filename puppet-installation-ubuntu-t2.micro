@@ -17,4 +17,6 @@ apt policy puppetmaster
 #Configuring Puppet Master
 sudo nano /etc/default/puppetmaster
 JAVA_ARGS="-Xms512m Xmx512m"     //Add this Line after START=yes
-sudo systemctl restart puppetmaster
+#restart puppet master & allow port 8140 on puppet master
+sudo systemctl restart puppetmaster && \
+sudo ufw allow 8140/tcp
