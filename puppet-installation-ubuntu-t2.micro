@@ -15,6 +15,6 @@ sudo apt-get install puppet -y && \
 apt policy puppetmaster
 
 #Configuring Puppet Master
-sudo nano /etc/default/puppet-master
+sudo nano /etc/default/puppetmaster
 JAVA_ARGS="-Xms512m Xmx512m"     //Add this Line after START=yes
-sudo systemctl restart puppet-master
+sudo systemctl restart puppetmaster
